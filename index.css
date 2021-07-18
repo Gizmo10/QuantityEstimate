@@ -1,6 +1,6 @@
 #title{
 
-    background-color:black;
+    background-color:aqua;
     height: 10vh;
     border: 1px solid gray;
     width: 100vw;
@@ -27,3 +27,10 @@
     background-color: aqua;
 
 }
+
+#submitArea{
+
+   width: 50%;
+   margin: auto;
+}
+
