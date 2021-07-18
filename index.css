@@ -1,6 +1,6 @@
 #title{
 
-    background-color:darkblue;
+    background-color:black;
     height: 10vh;
     border: 1px solid gray;
     width: 100vw;
@@ -12,4 +12,18 @@
     flex-direction: column;
     justify-content:center;
     flex-wrap: nowrap;
+    width: 50%;
+    margin: auto;
+}
+
+#inputArea{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    border: 1px solid black;
+    padding: 1vh 1vw;
+    background-color: aqua;
+
 }
