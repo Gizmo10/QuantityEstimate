@@ -38,11 +38,20 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     border: 1px solid black;
     background-color:aqua;
     height: 30vh;
+
+}
+
+#reportButton{
+
+    width: 2.5vw;
+    height: 3vh;
+    background-color:gray;
     text-align: center;
+    
 }
 
