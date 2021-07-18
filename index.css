@@ -28,9 +28,19 @@
 
 }
 
-#submitArea{
+#submitButton{
 
    width: 50%;
    margin: auto;
+}
+
+#outputArea{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    border: 1px solid black;
+    background-color:aqua;
 }
 
