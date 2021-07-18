@@ -5,3 +5,11 @@
     border: 1px solid gray;
     width: 100vw;
 }
+
+#interactionArea{
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    flex-wrap: nowrap;
+}
