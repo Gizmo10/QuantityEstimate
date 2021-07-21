@@ -11,6 +11,15 @@ SUBMIT_BUTTON.onclick = ()=>{
     let numberOfBricks = getNumberOfBricks();
     let bagsOfCementRequired = getCementRequired();
     let sandKilosRequired = getNumberOfBricks();
+    //Stores String to be output to screen
+    let report = "You need a minimum of " + numberOfBricks + " bricks." + 
+                 "\n You need a minimum of " + bagsOfCementRequired + " bags of 50kg cement to make bricks."
+                 + "\n You need a minimum of " + sandKilosRequired + " Kgs of sand to make bricks.";
+    //Display report 
+    REPORT_DIV.style.display = "block";
+    REPORT_DIV.innerHTML = report;
+    
+                 
 }
 
 
@@ -20,7 +29,7 @@ const getNumberOfBricks = ()=> surfaceAreaInput.value/BRICK_AREA;
 
 /*A method to compute the amount of cement bags will be needed
 Where each bag is 50kgs*/
-const getCementRequired = ()=> getNumberOfBricks / AVERAGE_NUMBER_OF_BRICKS_PER_50KG_CEMENT;
+const getCementRequired = ()=> getNumberOfBricks() / AVERAGE_NUMBER_OF_BRICKS_PER_50KG_CEMENT;
 
 /*When making interlocking bricks, the cement is only 8% of the mixture
 And 92% is sand. To find amount of sand we can use the next method*/
