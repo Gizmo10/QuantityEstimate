@@ -19,5 +19,13 @@ const getCementRequired = ()=> getNumberOfBricks / AVERAGE_NUMBER_OF_BRICKS_PER_
 
 /*When making interlocking bricks, the cement is only 8% of the mixture
 And 92% is sand. To find amount of sand we can use the next method*/
-const getSandRequired = ()=> {};
+const getSandRequired = ()=> {
+  //Stores the kilograms of cement required to make bricks
+let cementInKg = getCementRequired() * 50;
+//Stores the amount of the cement and sand mixture in Kgs
+let totalMixtureInKg = cementInKg / 0.08;
+//The sand is 92% of the total 
 
+return totalMixtureInKg * 0.92;
+
+}
